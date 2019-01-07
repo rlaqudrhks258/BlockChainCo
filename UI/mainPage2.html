@@ -14,7 +14,7 @@
 </head>
 <style>
     body{
-        width: 100%; height: 100%;
+        margin: 0px;
     }
      .headerClass{
         height : 60px;
@@ -75,17 +75,16 @@
     }
     .subMenuBar{
     margin-top: 22px;
+    margin-bottom:22 px;
     height: 22px;
-    z-index: 6 !important;
+    z-index: 200;
     border-bottom: 1px solid #e1e4e8;
     border-left: 1px solid #e1e4e8;
    
     }
     .menuDisplayNone{
         display : none;
-        
     }
-
   
 
 
@@ -125,98 +124,11 @@
         height: 600px;
         padding-left: 100px;
         padding-right: 100px;
-        margin-top: 12px;
 
     }
     .contentBody2{
 
     }
-/* 코인 일정 css */
-    .coinCalendar{
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-    .coinCalendar2{
-            width: 100%;
-            height: 400px;
-    }
-    .coCa1{
-        float: left;
-        width: 485px;
-        height: 100%;
-        border-top : 1px solid #cfcfcf;
-        border-left : 1px solid #cfcfcf;
-        border-bottom: 1px solid #cfcfcf;
-        border-right : 1px solid #cfcfcf;
-        border-top-left-radius: 3px;
-        border-bottom-left-radius: 3px;
-
-        padding: 10px;
-        overflow-y: auto;
-        overflow-x: hidden;
-        
-    }
-    .coCa2{
-        float: left;
-        width: 485px;
-        height: 100%;
-        border-top : 1px solid #cfcfcf;
-        border-bottom: 1px solid #cfcfcf;
-        border-right : 1px solid #cfcfcf;
-        padding: 10px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-    }
-    .coSchedule{
-        cursor: pointer;
-        border-radius: 3px;
-        padding: 10px;
-        margin-top: 10px;
-        height: 40px;
-        color: white;
-    background-color: #36265f
-
-    }
-    .coCaDate{
-        float: left;
-    width: auto;
-    height: 100%;
-    font-size: 25px;
-    margin-right: 10px;
-     
-    }
-    .coCaContent{
-        float: left;
-    width: auto;
-    height: 100%;
-    font-size: 20px;
-    padding-top: 4px;
-    }
-    .detailCoCaTitle{
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 28px;
-        font-weight: 600;
-    }
-    .detailCoCaContent{
-        padding-top : 20px;
-        font-weight: bold;
-    }
-    .percentage{
-        float: right;
-        color : red;
-        margin-top: 15px;
-        font-size: 20px;
-    }
-    .imgPic{
-        border: 1px solid #f3f3f3;
-        padding : 3px;
-    }
-    .imgPic2{
-        width: 100%;
-        height: 254px;
-    }
-
 
 </style>
 <body>
@@ -233,10 +145,23 @@
     </div>
      <div class = "menuBarConstructor">
         <div class = "menuBar">
-            <div class = "menuSection menuSection1">코인 정보</div>
+            <div class = "menuSection menuSection1">코인 정보
+             <div class = "forDisplay menuDisplayNone">
+                <div class = "subMenuBar">뉴스</div>
+                <div class = "subMenuBar">정보</div>
+                <div class = "subMenuBar">분석</div>
+            </div>
+
+            </div>
             <div class = "menuSection">코인 일정</div>
             <div class = "menuSection">코인 거래</div>
-            <div class = "menuSection menuSection3">커뮤니티</div>
+            <div class = "menuSection menuSection3">커뮤니티
+                    <div class = "forDisplay2 menuDisplayNone">
+                            <div class = "subMenuBar">자유게시판</div>
+                            <div class = "subMenuBar">코인/토큰 추천</div>
+                            <div class = "subMenuBar">갤러리</div>
+                        </div>
+            </div>
             <div class = "menuSection">출석체크</div>
             <div class = "menuSection menuSection2">공지사항</div>
         </div>
@@ -248,60 +173,6 @@
 
     <div class = "contentBody">
         <div class = "contentBody2">
-            
-            <!-- 코인일정 ui -->
-            <div>코인 일정</div>
-            <div class = "coinCalendar">
-                <div class = "coinCalendar2">
-
-                    <div class = "coCa1">
-                        <div class = "coSchedule">
-                            <div class = "coCaDate">1/13</div>
-                            <div class = "coCaContent">BlockChain meetUp</div>
-                        </div>
-                        <div class = "coSchedule">
-                                <div class = "coCaDate">1/13</div>
-                                <div class = "coCaContent">BlockChain meetUp</div>
-                        </div>
-                        <div class = "coSchedule">
-                                <div class = "coCaDate">1/13</div>
-                                <div class = "coCaContent">BlockChain meetUp</div>
-                        </div>
-                        <div class = "coSchedule">
-                                <div class = "coCaDate">1/13</div>
-                                <div class = "coCaContent">BlockChain meetUp</div>
-                        </div>
-                        <div class = "coSchedule">
-                                <div class = "coCaDate">1/13</div>
-                                <div class = "coCaContent">BlockChain meetUp</div>
-                        </div>
-                        <div class = "coSchedule">
-                                <div class = "coCaDate">1/13</div>
-                                <div class = "coCaContent">BlockChain meetUp</div>
-                        </div>
-                    
-                    
-                        
-
-                </div>
-
-                    <!-- 코인 일정 요약 -->
-                    <div class = "coCa2">
-                        <div class = "detailCoCaTitle">
-                            <div>BlockChain meetUp<span class = "percentage">88%</span></div>
-                        </div>
-                        <div class = "detailCoCaContent">
-                            
-                            <div class = "detailDate">일정 : 2018/01/17~2018/01/20</div>
-                            <div class = "detailDate">위치 : 중국 요녕성 동북대</div>
-                            <br>
-                            <div class = "proofPic">증거</div>
-                            <div class = "imgPic"><img src="./img/PROFF.png" class = "imgPic2"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
     </div>
@@ -333,7 +204,28 @@
         })
     })
 
- 
+    $(".menuSection1").mouseover(function(){
+        $(".forDisplay").removeClass("menuDisplayNone");
+        
+        
+        $(".menuSection1").addClass("changeColor2");
+        $(this).mouseleave(function(){
+            $(this).removeClass("changeColor2");
+            $(".forDisplay").addClass("menuDisplayNone");
+        })
+    })
+    $(".menuSection3").mouseover(function(){
+        $(".forDisplay2").removeClass("menuDisplayNone");
+        
+        
+        $(".menuSection3").addClass("changeColor2");
+        $(this).mouseleave(function(){
+            $(this).removeClass("changeColor2");
+            $(".forDisplay2").addClass("menuDisplayNone");
+        })
+    })
+
+    
 
     $(".menuSection").mouseover(function(){
         $(this).addClass("changeColor2");
