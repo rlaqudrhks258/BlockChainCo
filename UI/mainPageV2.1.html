@@ -140,11 +140,11 @@ padding-right:50px;
     display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 .menuBar li li {
-    display:block;
-    float:none;
-    margin:0px;
-    padding:0px;
-    width:100px;
+    display: block;
+    float: none;
+    margin: -23px;
+    padding: 0px;
+    width: 146px;
     background: white;
 }
 .menuBar2{
@@ -174,25 +174,37 @@ padding-right:50px;
         height: 11px;
         background: #ebeef3;
     }
-    /* 메인컨텐츠 */
 
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+    /* 메인컨텐츠-1 코인 시세 */
+.mainContent{
+    height: 310px;
+}
 .mainCoPriceContainer{
     padding-top: 10px;
     height: 300px;
-    background : #fbfcff;
+    background: #fbfcff;
     padding-left: 100px;
     padding-right: 100px;
+   
+    
 } 
 .mainCoPriceContainer2{
     border-radius : 8px;
     border: 1px solid #e5e5e5;
     height: 290px;
     background-color: white;
+    overflow-y: scroll;
+    width: 102%;
     /* padding-left: 18px;
     padding-right: 18px; */
     
 }
 .coPriFirst{
+
     height: 45px;
     border-bottom: 1px solid #e5e5e5;
     border-top-right-radius: 8px;
@@ -204,14 +216,279 @@ padding-right:50px;
     height: 40px;
     border-bottom: 1px solid #e5e5e5;
 }
-.ourCoinList{
+
+.coinList{
+    float: left;
     line-height: 45px;
-    width: 100px;
+}
+
+
+.searchForm{
+    width: 110px;
+    margin-top: 7px;
+    float: right;
+    padding: 5px 35px;
+    border: 1px solid #dedede;
+}
+#searchForm{
+  background-image: url("img/searchImg.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+
+}
+.coCategory{
+    float : left;
+    width: 189px;
+    height: 41px;
+    font-size: 12px;
+    line-height: 37px;
+    color: rgba(34, 34, 34, 0.4);
+    
+}
+.defaultSize{
+ float:left;
+ width: 56px;
+ height: 41px;
+}
+.coinName{
+    float: left;
+    width: 133px;
+    height: 41px;
+    font-size: 12px;
+    line-height: 37px;
+    color: rgba(34, 34, 34, 0.4);
+}
+/* 메인컨텐츠-1 코인시세 파트에서 실제 for문 돌리는 부분 */
+.coPriThird{
+    height: 52px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.forBottomLine{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.commonContain{
+    float : left;
+    width: 189px;
+    height: 52px;
+    font-size: 12px;
+    line-height: 37px;
+    color: rgba(34, 34, 34, 0.4);
+    
+}
+.commonContain2{
+    float : left;
+    width: 189px;
+    height: 52px;
+    font-size: 12px;
+    line-height: 54px;
+    color: rgba(34, 34, 34, 0.4);
+}
+.coinPic{
+    float: left;
+    width: 56px;
+    height: 52px;
+}
+.coinTitle{
+    width: 133px;
+    height: 52px;
     float: left;
 }
-.searchForm{
+.coinrePicture{
+    margin-top: 11px;
+    margin-right: 7px;
     float: right;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.5px 2px 2px 0px;
 }
+.coinrePicture2{
+    border-radius: 50%;
+    width: 29px;
+    height: 29px;
+    padding-left: 1px;
+    padding-top: 1.5px;
+}
+.coinTitle2{
+    height: 26px;
+    color:  #222;
+}
+.coinTitle3{
+    line-height: 21px;
+    height: 26px;
+    color: #a1a1a1;
+}
+.coinCompare{
+    color: #e91e63;
+}
+
+
+/* 메인 컨텐츠 -3 */
+.mainContent3{
+    margin-top: 20px;
+    position: relative;
+    padding-left: 6.7%;
+    padding-right: 6.7%;
+    height: 400px;
+    
+}
+.categoryName{
+    font-size: 20px;
+    width: 99%;
+    height: 11%;
+    border-bottom: 1px solid #e8e8e8;
+}
+.newsContainer{
+    position: relative;
+    margin-top: 3%;
+    width: 24%;
+    height: 77%;
+    float: left;
+
+}
+.scaleImg{
+    overflow: hidden;
+    margin-bottom: 10%;
+    
+    width: 96%;
+    height: 55%;
+}
+.newsPicture{
+    margin-bottom: 10%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ 
+  transition: all 0.3s ease-in-out;
+}
+.newsPicture:hover{
+    transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.newsTitle{
+    width: 96%;
+    margin-bottom: 3%;
+}
+
+.newsForFont{
+    width: 1%;
+    font-size: 13px;
+    color: gray;
+    font-family: 'Do Hyeon', sans-serif;
+
+}
+.newsForFont2{
+    font-size: 12.8px;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.newsDate{
+    
+    float: left;
+    width: 46%;
+}
+.newsViewCnt{
+float: left;
+width: 48%;
+}
+
+/* 메인 컨텐츠 -2 */
+.mainContent2{
+    
+    margin-top: 20px;
+    position: relative;
+    padding-left: 6.7%;
+    padding-right: 6.7%;
+    height: 400px;
+}
+.communityContainer{
+  
+position: absolute;
+width: 87.3%;
+}
+.communityCategory{
+    margin-right: 1.4%;
+    float: left;
+    width: 31.5%;
+    min-height: 350px;
+    padding-top: 1%;
+    
+}
+.categoryName2{
+    font-size: 20px;
+    width: 100%;
+    height: 11%;
+
+}
+.communityDeCategory{
+font-size: 13px;
+border-bottom: 1px solid #e8e8e8;
+padding-bottom: 1%;
+}
+.communityContainer2{
+ 
+    margin-top: 2%;
+    min-height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.communityContainer2:hover{
+    transition-duration: 0.38s;
+    background-color: #fbfbfb;
+    cursor: pointer;
+}
+.freeCommunity{
+    float: left;
+}
+
+.comTitle{
+width: 64%;
+}
+.comWriter{
+    width: 20%;
+}
+.comRegDate{
+    width: 16%;
+}
+.communityContainer3{
+    margin-top: 2%;
+    min-height: 70px;
+    font-size: 12px;
+    line-height: 24px;
+
+}
+.comGaContainer{
+    float: left;
+    width: 74.7%;
+    height: 100%;
+}
+.comGalTitle{
+    
+    font-size: 18px;
+    min-height: 46px;
+}
+}
+.comGalWriterDate{
+    line-height: 10px;
+}
+.comGalWriter{
+float: left;
+margin-right: 2%;
+}
+.comGalRegDate{
+    float: left;
+}
+.comImg{
+    float: left;
+    width: 25.3%;
+}
+
+
 </style>
 <body>
     <!-- 헤더 -->
@@ -229,8 +506,10 @@ padding-right:50px;
             <li><a href = '#'>코인 거래소</a></li>
             <li><a href = '#'>커뮤니티</a>
                 <ul>
-                        <li><a href = "#">자유게시판</a></li>
-                        <li><a href = "#">갤러리</a></li>
+                        <li><a href = "#">자유 게시판</a></li>
+                        <li><a href = "#">자유 갤러리</a></li>
+                        <li><a href = "#">손익 갤러리</a></li>
+                        <li><a href = "#">차트분석</a></li>
                         <li><a href = "#">출석 체크</a></li>
                     </ul>
             </li>
@@ -247,22 +526,314 @@ padding-right:50px;
     </div>
     <!-- 여기까지 헤더 -->
 
+<div class = "content">
+    <div class=  "mainContent">
+        <!-- 코인 시세 -->
+        <div class = "mainCoPriceContainer">
+            <div class = "mainCoPriceContainer2">
+                <div class = "coPriFirst">
+                
+                        <div class = "coinList">Our Coin List</div>
+                        <input type ="text" class = "searchForm" id = "searchForm">
 
-<div class=  "mainContent">
-    <!-- 코인 시세 -->
-    <div class = "mainCoPriceContainer">
-        <div class = "mainCoPriceContainer2">
-            <div class = "coPriFirst">
-                <div class = "ourCoinList">Our Coin List</div>
-                <div class = "searchForm"></div>
+                    
+                </div>
+
+                <div class = "coPriSecond">
+                        <div class ="coCategory">
+                            <div class = "defaultSize"></div>
+                            <div class = "coinName">코인명</div>
+                        </div>
+                            <div class ="coCategory">현재가격</div>
+                            <div class ="coCategory">전일대비</div>
+                            <div class ="coCategory">24h 고가</div>
+                            <div class ="coCategory">24h 저가</div>
+                            <div class ="coCategory">거래량</div>
+                            <div class ="coCategory">거래대금</div>
+                </div>
+
+                <div class = "coPriThird">
+                    <!-- 여기가 for문 반복돌릴곳 -->
+                <div class = "forBottomLine">
+                    <div class = "commonContain">
+                        <div class = "coinPic">
+                        <div class = "coinrePicture">
+                            <img src="./img/kin.png" class = "coinrePicture2">
+                        </div>
+                        </div>
+                        <div class = "coinTitle">
+                            <div class = "coinTitle2">KIN</div>
+                            <div class = "coinTitle3">킨</div>
+                        </div>
+                    </div>
+                    <div class = "commonContain2 coinCurrentPrice">
+                            0.03원
+                    </div>
+                    <div class = "commonContain2 coinCompare">-8.02%</div>
+                    <div class = "commonContain2 coinHighPrice">0.04원</div>
+                    <div class = "commonContain2 coinLowPrice">0.03원</div>
+                    <div class = "commonContain2 coinTransaction">0.00000</div>
+                    <div class = "commonContain2 coinTotalAsset">0.00000</div>
+                </div>
+            
+                <div class = "forBottomLine">
+                        <div class = "commonContain">
+                            <div class = "coinPic">
+                            <div class = "coinrePicture">
+                                <img src="./img/kin.png" class = "coinrePicture2">
+                            </div>
+                            </div>
+                            <div class = "coinTitle">
+                                <div class = "coinTitle2">KIN</div>
+                                <div class = "coinTitle3">킨</div>
+                            </div>
+                        </div>
+                        <div class = "commonContain2 coinCurrentPrice">
+                                0.03원
+                        </div>
+                        <div class = "commonContain2 coinCompare">-8.02%</div>
+                        <div class = "commonContain2 coinHighPrice">0.04원</div>
+                        <div class = "commonContain2 coinLowPrice">0.03원</div>
+                        <div class = "commonContain2 coinTransaction">0.00000</div>
+                        <div class = "commonContain2 coinTotalAsset">0.00000</div>
+                    </div>
+                    <div class = "forBottomLine">
+                            <div class = "commonContain">
+                                <div class = "coinPic">
+                                <div class = "coinrePicture">
+                                    <img src="./img/kin.png" class = "coinrePicture2">
+                                </div>
+                                </div>
+                                <div class = "coinTitle">
+                                    <div class = "coinTitle2">KIN</div>
+                                    <div class = "coinTitle3">킨</div>
+                                </div>
+                            </div>
+                            <div class = "commonContain2 coinCurrentPrice">
+                                    0.03원
+                            </div>
+                            <div class = "commonContain2 coinCompare">-8.02%</div>
+                            <div class = "commonContain2 coinHighPrice">0.04원</div>
+                            <div class = "commonContain2 coinLowPrice">0.03원</div>
+                            <div class = "commonContain2 coinTransaction">0.00000</div>
+                            <div class = "commonContain2 coinTotalAsset">0.00000</div>
+                        </div>
+
+                        <div class = "forBottomLine">
+                                <div class = "commonContain">
+                                    <div class = "coinPic">
+                                    <div class = "coinrePicture">
+                                        <img src="./img/kin.png" class = "coinrePicture2">
+                                    </div>
+                                    </div>
+                                    <div class = "coinTitle">
+                                        <div class = "coinTitle2">KIN</div>
+                                        <div class = "coinTitle3">킨</div>
+                                    </div>
+                                </div>
+                                <div class = "commonContain2 coinCurrentPrice">
+                                        0.03원
+                                </div>
+                                <div class = "commonContain2 coinCompare">-8.02%</div>
+                                <div class = "commonContain2 coinHighPrice">0.04원</div>
+                                <div class = "commonContain2 coinLowPrice">0.03원</div>
+                                <div class = "commonContain2 coinTransaction">0.00000</div>
+                                <div class = "commonContain2 coinTotalAsset">0.00000</div>
+                            </div>
+                        
+                                                    
+                </div>
             </div>
-            <div class = "coPriSecond"></div>
-            <div class = "coPriThird"></div>
         </div>
+
+
+
     </div>
+    <!-- 두번쨰 메인 컨텐츠 -->
+    <div class = "mainContent2">
+            <div class = "categoryName2">Community</div>
+            <div class = "communityContainer">
+                <div class = "communityCategory">
+                    <div class = "communityDeCategory">자유게시판</div>
+
+                        <div class = "communityContainer2">
+                            <div class = "freeCommunity comTitle">알보스 다음 관심코인</div>
+                            <div class = "freeCommunity comWriter">삼겹살에우유</div>
+                            <div class = "freeCommunity comRegDate">2019.02.17</div>
+                        </div>
+
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle"><div>비트코인 ETF 시간 지연된다 하는데..</div></div>
+                                <div class = "freeCommunity comWriter">삼겹살에맥주</div>
+                                <div class = "freeCommunity comRegDate">2019.02.16</div>
+                        </div>
+
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">백트 거절 찌라시 스멀스멀...</div>
+                                <div class = "freeCommunity comWriter">삼겹살에쏘주</div>
+                                <div class = "freeCommunity comRegDate">2019.02.15</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">거래소 보안 등급 및 순위 - v2.0 _ ICORating</div>
+                                <div class = "freeCommunity comWriter">삼겹살에와사비</div>
+                                <div class = "freeCommunity comRegDate">2019.02.14</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">51%의 공격?</div>
+                                <div class = "freeCommunity comWriter">삼겹살에와인</div>
+                                <div class = "freeCommunity comRegDate">2019.02.13</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">블록체인허브 애칭은 무엇이 좋을까요?</div>
+                                <div class = "freeCommunity comWriter">삼겹살에사이다</div>
+                                <div class = "freeCommunity comRegDate">2019.02.12</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">이더리움 콘스탄티노플 하드포크에 관하여 #1</div>
+                                <div class = "freeCommunity comWriter">삼겹살에쳐먹</div>
+                                <div class = "freeCommunity comRegDate">2019.02.11</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">누나 삼겹살 언제 다익어요?</div>
+                                <div class = "freeCommunity comWriter">삼겹살언제익어</div>
+                                <div class = "freeCommunity comRegDate">2019.02.10</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">실크로드 개설자 母, 트럼프 대통령에 형량 감량 청원</div>
+                                <div class = "freeCommunity comWriter">삼겹살에하하</div>
+                                <div class = "freeCommunity comRegDate">2019.02.9</div>
+                        </div>
+                        <div class = "communityContainer2">
+                                <div class = "freeCommunity comTitle">나는 아직도 배고프다</div>
+                                <div class = "freeCommunity comWriter">삼겹살에배고픔</div>
+                                <div class = "freeCommunity comRegDate">2019.02.9</div>
+                        </div>
+                       
 
 
 
+                </div>
+                <div class = "communityCategory">
+                    <div class = "communityDeCategory">자유갤러리</div>
+                    <div class = "communityContainer3">
+                        <div class = "comGaContainer">
+                            <div class ="comGalTitle">히잡 쓰신 여성분 입니다.</div>
+                            <div class ="comGalWriterDate">
+                                <div class = "comGalWriter">웅이아버지</div>
+                                <div class = "comGalRegDate">2019.02.09</div>
+                            </div>
+                        </div>
+                        <img src="./img/hijab-3064633_1920.jpg" class="comImg">
+                    </div>
+
+                    <div class = "communityContainer3">
+                            <div class = "comGaContainer">
+                                <div class ="comGalTitle">이뿌다 ㅠㅠ.</div>
+                                <div class ="comGalWriterDate">
+                                    <div class = "comGalWriter">삼겹살엔소주</div>
+                                    <div class = "comGalRegDate">2019.02.09</div>
+                                </div>
+                            </div>
+                            <img src="./img/woman-1320810_1920.jpg" class="comImg">
+                        </div>
+
+                        <div class = "communityContainer3">
+                                <div class = "comGaContainer">
+                                    <div class ="comGalTitle">블록체인 코인 가지실분~</div>
+                                    <div class ="comGalWriterDate">
+                                        <div class = "comGalWriter">원육2키로</div>
+                                        <div class = "comGalRegDate">2019.02.09</div>
+                                    </div>
+                                </div>
+                                <img src="./img/bitcoin-2057405_1920.jpg" class="comImg">
+                            </div>
+
+                            <div class = "communityContainer3">
+                                    <div class = "comGaContainer">
+                                        <div class ="comGalTitle">배경화면 가지고가세요!!</div>
+                                        <div class ="comGalWriterDate">
+                                            <div class = "comGalWriter">g마켓에서사세요</div>
+                                            <div class = "comGalRegDate">2019.02.09</div>
+                                        </div>
+                                    </div>
+                                    <img src="./img/dog-647528_1920.jpg" class="comImg">
+                                </div>
+                   
+
+                </div>
+                <div class = "communityCategory">
+                    <div class = "communityDeCategory">손익갤러리</div>
+                </div>
+            </div>
+    </div>
+    <!-- 세번쨰 메인 컨텐츠 -->
+    <div class = "mainContent3">
+        <div class = "categoryName">News</div>
+
+        <div class = "newsContainer">
+            <!-- 뉴스사진 들어가는곳 -->
+            <div class = "scaleImg">
+                <img src="./img/blockchain-3277336_1280.png" class = "newsPicture">
+            </div>
+            <!-- 뉴스 제목 조회수 들어가는곳 -->
+                <div class = "newsTitle">
+                        빗썸, 최재원 대표 선임…글로벌사업 '고삐' 당긴다
+                </div>
+                
+                    <div class = "newsDate"><span class = "newsForFont">Date</span><span class = "newsForFont2">2018.07.08</span></div>
+                    <span class = "newsSpan"></span>
+                    <div class = "newsViewCnt"><span class = "newsForFont">view</span><span class = "newsForFont2">208889</span></div>
+                
+
+        </div>
+
+        <div class = "newsContainer">
+                <div class = "scaleImg">
+                     <img src="./img/blockchain-3041480_1920.jpg" class = "newsPicture">
+                </div>
+                  <!-- 뉴스 제목 조회수 들어가는곳 -->
+                <div class = "newsTitle">
+                        日암호화폐 ETF 승인 검토에 美도 '움찔'…시장 반등하나
+                </div>
+                
+                    <div class = "newsDate"><span class = "newsForFont">Date</span><span class = "newsForFont2">2018.07.08</span></div>
+                    <span class = "newsSpan"></span>
+                    <div class = "newsViewCnt"><span class = "newsForFont">view</span><span class = "newsForFont2">208889</span></div>
+
+                    
+            </div>
+
+            <div class = "newsContainer">
+                    <div class = "scaleImg">
+                        <img src="./img/bitcoin-3890348_1920.jpg" class = "newsPicture">
+                    </div>
+                     <!-- 뉴스 제목 조회수 들어가는곳 -->
+                <div class = "newsTitle">
+                        [코인리뷰]코인을 포인트처럼…왓챠의 '콘텐츠 프로토콜'
+                </div>
+                
+                    <div class = "newsDate"><span class = "newsForFont">Date</span><span class = "newsForFont2">2018.07.08</span></div>
+                    <span class = "newsSpan"></span>
+                    <div class = "newsViewCnt"><span class = "newsForFont">view</span><span class = "newsForFont2">208889</span></div>
+        
+                </div>
+
+                <div class = "newsContainer">
+                        <div class = "scaleImg">
+                            <img src="./img/crypto-currency-3130381_1920.jpg" class = "newsPicture">
+                        </div>
+                         <!-- 뉴스 제목 조회수 들어가는곳 -->
+                <div class = "newsTitle">
+                        '51%공격'에 무너진 이더리움클래식…다음 표적은 대시?
+                </div>
+                
+                    <div class = "newsDate"><span class = "newsForFont">Date</span><span class = "newsForFont2">2018.07.08</span></div>
+                    <span class = "newsSpan"></span>
+                    <div class = "newsViewCnt"><span class = "newsForFont">view</span><span class = "newsForFont2">208889</span></div>
+            
+                    </div>
+
+    </div>
 </div>
 
 
