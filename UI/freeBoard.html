@@ -45,6 +45,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    min-width: 1400px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -89,8 +91,9 @@ table {
         color: #c6cbd1;                                          
     }
     /* 헤더 */
-.header{
-height: 60px;
+    .header{
+        position: relative;
+min-height: 60px;
 padding-left:50px;
 padding-right:50px;
 }
@@ -104,6 +107,7 @@ padding-right:50px;
 }
 
 .menuBar{
+
     list-style: none;
     float:left;
 
@@ -139,11 +143,11 @@ padding-right:50px;
     display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 }
 .menuBar li li {
-    display:block;
-    float:none;
-    margin:0px;
-    padding:0px;
-    width:100px;
+    display: block;
+    float: none;
+    margin: -23px;
+    padding: 0px;
+    width: 146px;
     background: white;
 }
 .menuBar2{
@@ -173,10 +177,57 @@ padding-right:50px;
         height: 11px;
         background: #ebeef3;
     }
+
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+    /* 메인 컨텐츠 */
+    .mainContainer{
+    min-width: 1000px;
+    min-height: 600px;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+    .mainContentLeft{
+        position: relative;
+       float: left;
+       width: 13%;
+       height: 279px;
+       border: 1px solid #ececec;
+       
+       margin-top: 0.2%;
+       
+
+    }
+    .favoriteSearch{
+        width: 86%;
+    height: 10%;
+    border-bottom: 1px solid #ececec;
+    padding-left: 10px;
+    line-height: 27px;
+    text-align: center;
+    }
+    .searchRank{
+        padding-left: 10px;
+
+    }
+    .searchRank li{
+        line-height: 29px;
+        height: 25px;
+  
+    }
+    .mainContentRight{
+        position: relative;
+        float: right;
+        width: 85%;
+        height: 300px;
+       border: 1px solid black;
+    }
 </style>
 <body>
-    <!-- 헤더 -->
-    <div class = "header">
+     <!-- 헤더 -->
+     <div class = "header">
         <div class = "siteLogo">BlockChainCo</div>
         <ul class = "menuBar">
             <li><a href = '#'>코인 정보</a>
@@ -190,8 +241,10 @@ padding-right:50px;
             <li><a href = '#'>코인 거래소</a></li>
             <li><a href = '#'>커뮤니티</a>
                 <ul>
-                        <li><a href = "#">자유게시판</a></li>
-                        <li><a href = "#">갤러리</a></li>
+                        <li><a href = "#">자유 게시판</a></li>
+                        <li><a href = "#">자유 갤러리</a></li>
+                        <li><a href = "#">손익 갤러리</a></li>
+                        <li><a href = "#">차트분석</a></li>
                         <li><a href = "#">출석 체크</a></li>
                     </ul>
             </li>
@@ -206,13 +259,25 @@ padding-right:50px;
         </ul>
 
     </div>
-    <!-- 여기까지 헤더 -->
 
 
     
 
 
-
+    <div class = "mainContainer">
+        <div class = "mainContentLeft">
+            <div class = "favoriteSearch">글 작성</div>
+            <ul class = "searchRank">
+                <li><a href = "#">자유 게시판</a></li>
+                <li><a href = "#">자유 갤러리</a></li>
+                <li><a href = "#">손익 갤러리</a></li>
+                <li><a href = "#">차트분석</a></li>
+                <li><a href = "#">출석 체크</a></li>
+               
+            </ul>
+        </div>
+        <div class = "mainContentRight"></div>
+    </div>
 
 
 
