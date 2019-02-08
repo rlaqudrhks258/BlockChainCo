@@ -16,53 +16,10 @@
         <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
         <!-- 맑은 고딕 -->
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     </head>
 <style>
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    display: block;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-    min-width: 1400px;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 
 /* 푸터 */
@@ -103,11 +60,13 @@ padding-right:50px;
     padding-top: 18px;
     font-size: 26px;
     color: #354891;
+    margin-top: -5px;
 }
 
 .menuBar{
     list-style: none;
     float:left;
+    margin-left: -43px;
 
 }
 .menuBar li{
@@ -165,6 +124,7 @@ padding-right:50px;
 }
 .link{
     cursor: pointer;
+    list-style: none;
     
 }
 .forSpan{
@@ -180,6 +140,73 @@ padding-right:50px;
         width: 100%;
         height: 100%;
     }
+
+    /* 시작 */
+    .writeBoardContainer{
+        width: 100%;
+        /*나중에 100%로  */
+        height: 300px;
+        padding-left: 20%;
+        padding-right: 20%;
+
+    }
+    .writeBoardContainer2{
+        width: 100%;
+        height: 100%;
+      
+    }
+    .writeBoardTitle{
+
+        border-bottom: 1px solid gainsboro;
+    }
+    .writeBoardContent{
+        margin-top: 2%;
+    }
+    .textType{
+        font-size: 42px;
+        width: 100%;
+        padding-bottom: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-top: 0px;
+    height: 60px;
+
+    }
+    input::placeholder{
+        color: #dadada;
+        font-style: italic;
+    }
+    input:focus{
+        outline: none;
+    }
+    /* 클릭시 옆에 선띄우기 */
+    .borderLeft{
+        border-left: 1px solid black;
+    }
+    .textContent{
+        font-size:20px;
+        width: 100%;
+        padding-bottom: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    padding-top: 0px;
+    min-height: 400px;
+    }
+    textarea:focus{
+        outline: none;
+    }
+    textarea::placeholder{
+        color: #dadada;
+        font-style: italic;
+    }
+.subIcon{
+    width: 100%;
+    height: 30px;
+}
 </style>
 <body>
      <!-- 헤더 -->
@@ -218,6 +245,17 @@ padding-right:50px;
 
 
     
+<div class = "writeBoardContainer">
+    <div class = "writeBoardContainer2">
+        <div class = "writeBoardTitle">
+            <input type = "text" class = "textType" placeholder="Title">
+        </div>
+        <div class = "writeBoardContent">
+            <div class ="subIcon"></div>
+     <textarea class = "textContent" placeholder="Content"></textarea>
+        </div>
+    </div>
+</div>
 
 
 
@@ -228,19 +266,21 @@ padding-right:50px;
 
 
 
-
-
-
-
-
-
-    <!-- 푸터 -->
+    <!-- 푸터 
     <div class = "footerClass1">
         <div class = "footerClass2">
             <div>사업자명: GBY Company 사업자번호:0000-0000-0000 <i class="fas fa-dice-four footer_margin"></i> 대표: 김병관 이메일: rlaqudrhks258@naver.com</div>
             <div>Copyright © BlockChainCo All Rights Reserved.</div>
         </div>
     </div>
-    <!--여기까지 푸터 -->
+  여기까지 푸터 -->
+  <!--  -->
+  <script>
+  
+//   $(".textType").click(function(){
+//     $(".writeBoardTitle").addClass("borderLeft");
+    
+//   });
+  </script>
 </body>
 </html>
